@@ -19,4 +19,4 @@ conda install conda install -c conda-forge fenics-dolfinx mpich python-gmsh
 You also need to set-up MATLAB and python to comminicate. You do this by
 
 cd /Applications/MATLAB_R2022b.app/extern/engines/python # (your MATLAB root maybe different)
-python setup.py install --prefix <path to your conda environment>
+python setup.py install --prefix="installdir"
