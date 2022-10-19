@@ -1,0 +1,368 @@
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000287459s, CPU 0.000214s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000209541s, CPU 0.000168s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000317542s, CPU 0.000202s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000216542s, CPU 0.000173s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000226458s, CPU 0.000179s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000249458s, CPU 0.000176s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+Info    : Done meshing 2D (Wall 2.27052s, CPU 0.23496s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000222166s, CPU 0.000177s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 1.8349s, CPU 0.222137s)
+Info    : 7331 nodes 14660 elements
+Info    : Writing './meshes/gecko2.msh'...
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 1.96349s, CPU 0.214262s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 1.6086s, CPU 0.204251s)
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : 7331 nodes 14660 elements
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done meshing 2D (Wall 1.51855s, CPU 0.204048s)
+Info    : 7331 nodes 14660 elements
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done writing './meshes/gecko2.msh'
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000226958s, CPU 0.000176s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 2.03032s, CPU 0.209618s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 2.22573s, CPU 0.217676s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 3.1251s, CPU 0.227053s)
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : 7331 nodes 14660 elements
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 103, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000220667s, CPU 0.000171s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+./mesh_points/gecko2.mat
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000269916s, CPU 0.000186s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000217417s, CPU 0.00017s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000225083s, CPU 0.000183s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.00022725s, CPU 0.000176s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.00023s, CPU 0.00018s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000217125s, CPU 0.000173s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+./mesh_points/gecko2.mat
+File Made!
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000215042s, CPU 0.000171s)
+Info    : Meshing 2D...
+Info    : Meshing surface 102 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 2.0099s, CPU 0.219973s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 2.0176s, CPU 0.216596s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done meshing 2D (Wall 2.03801s, CPU 0.212936s)
+Info    : 7331 nodes 14660 elements
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 2.05149s, CPU 0.216851s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done meshing 2D (Wall 2.04621s, CPU 0.209205s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 2.06292s, CPU 0.210702s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done meshing 2D (Wall 1.97758s, CPU 0.215507s)
+Warning : Could not orient normal of surface 102
+Info    : 7331 nodes 14660 elements
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done writing './meshes/gecko2.msh'
+Info    : Done meshing 2D (Wall 2.12328s, CPU 0.211233s)
+Info    : 7331 nodes 14660 elements
+Warning : Could not orient normal of surface 102
+Warning : ------------------------------
+Warning : Mesh generation error summary
+Warning :     1 warning
+Warning :     0 errors
+Warning : Check the full log for details
+Warning : ------------------------------
+Info    : Writing './meshes/gecko2.msh'...
+Info    : Done writing './meshes/gecko2.msh'
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+Traceback (most recent call last):
+  File "/Users/170011584/PycharmProjects/turing_patterns.py/main.py", line 105, in <module>
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    r = solver.solve(u)
+  File "/Users/170011584/opt/anaconda3/envs/fenicsx-env/lib/python3.9/site-packages/dolfinx/nls/petsc.py", line 41, in solve
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
+    n, converged = super().solve(u.vector)
+RuntimeError: Newton solver did not converge because maximum number of iterations reached
