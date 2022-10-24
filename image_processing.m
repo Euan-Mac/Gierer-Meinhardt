@@ -1,69 +1,58 @@
-function [c1,c2]=image_processing(in_dir,filename)
+% MATAB function which takes an image and outputs the coordinates of the
+% boundary of that image. 
+function [c1_prime,c2_prime]=image_processing(path_to_file,white_background,filter_rate,do_plot,thresh)
 
-%filename="gecko2";
-threshold=0.9;
-swap_image=true;
-pixel_rate=3;
-degree=5;
-plot_on=false;
+I= imread(path_to_file); % read image 
 
-%n_dir="./data/mesh_images";
-out_dir="./mesh_points/";
-Image = imread(strcat(in_dir,filename,'.png'));
-
-I     = im2bw(Image,threshold);
-if swap_image
-    I=~I;
-end
-Ifill = imfill(I,'holes');
-B = bwboundaries(Ifill);
-for k = 1
-    b = B{k};
-    if plot_on
-        hold on
-        subplot(121)
-        title("Original Image')")
-        plot(b(:,1),b(:,2),'r','linewidth',2);
-    end
+[~, ~, numberOfColorChannels] = size(I); % check if image is color
+if numberOfColorChannels > 1
+    I_gray = rgb2gray(I); % if color, then convert to grey
+else
+    I_gray=I;
 end
 
-
-c1  = downsample(b(:,1),pixel_rate);
-c2  = downsample(b(:,2),pixel_rate);
-if plot_on
-    subplot(122)
-    title('Filtered Grid')
-    plot(c1,c2)
-end
-disp(strcat(out_dir,filename,'.mat'))
-save (strcat(out_dir,filename,'.mat'), 'c1', 'c2')
-
-
-% fileID = fopen(strcat(out_dir,filename,'_discrete_mesh_generator.py'),'w');
-% 
-% fprintf(fileID,"import gmsh \n");
-% fprintf(fileID,"import sys \n \n");
-% fprintf(fileID,"gmsh.initialize() \n");
-% fprintf(fileID,"gmsh.model.add(""%s"") \n \n",filename);
-% fprintf(fileID,"gmsh.model.addDiscreteEntity(1, 100) \n");
-% fprintf(fileID,"flat_pts=[] \n\n");
-% for i=1:length(c1)
-%     fprintf(fileID,"flat_pts.append(%d) \n",c1(i));
-%     fprintf(fileID,"flat_pts.append(%d) \n",c2(i));
-%     fprintf(fileID,"flat_pts.append(%d) \n",0);
-% end
-% fprintf(fileID,"\ngmsh.model.mesh.addNodes(1, 100, range(1, %d + 1), flat_pts) \n",length(c1));
-% fprintf(fileID,"n = [item for sublist in [[i, i + 1] for i in range(1, %d + 1)] for item in sublist] \n",length(c1));
-% fprintf(fileID,"n[-1] = 1 \n");
-% fprintf(fileID,"gmsh.model.mesh.addElements(1, 100, [1], [range(1, %d + 1)], [n]) \n",length(c1));
-% fprintf(fileID,"gmsh.model.geo.addCurveLoop([100], 101) \ngmsh.model.geo.addPlaneSurface([101], 102) \ngmsh.model.geo.synchronize() \n");
-% fprintf(fileID,"gmsh.model.mesh.generate(2) \n");
-% fprintf(fileID,"gmsh.write(""%s"") \n",strcat(my_dir,mesh_dir,filename,".msh"));
-% fprintf(fileID,"if '-nopopup' not in sys.argv: \n");
-% fprintf(fileID,"\tgmsh.fltk.run() \n");
-% fprintf(fileID,"gmsh.finalize()");
-
-
-disp("File Made!")
+if nargin==5 % check if threshold value for grey -> binary is given
+    IB=im2bw(I,thresh);
+else
+    IB=im2bw(I,mean(I_gray,'all')/255); % if not, then use the 
+    % average image brightness to guess this values
+    %( Generally, this doesn't work well so I'd reccomend trial and error
+    %to get this value)
 end
 
+% if image has a white background then we need to swap the black and white
+% as MATLAB functions are desgined to look for bright objects on dark
+% backgrounds
+if white_background
+    IB=~IB;
+end
+
+[labeledImage,~]=bwlabel(IB, 8);  % fine objects in image
+props=regionprops(labeledImage, I_gray, 'all');  % get properties of objects
+allBlobAreas = [props.Area];  % get vector of object areas
+mesh_indices=allBlobAreas==max(allBlobAreas);  % we assume we want the largest area object
+mesh_image=ismember(labeledImage, find(mesh_indices)); 
+boundaries=bwboundaries(mesh_image);  % get boundaries of this object
+b=boundaries{1};
+
+c1  = downsample(b(:,1),filter_rate); % downsample image if filter_rate>1, 
+% this results in faster mesh generation as well as avoiding 
+% self-intersections sometimes
+c2  = downsample(b(:,2),filter_rate);
+
+% normalise image such that the laregest dimension sits [-0.5,0.5]
+c1_prime=c1-mean(c1);
+c2_prime=c2-mean(c2);
+x_length=max(c2_prime)-min(c2_prime);
+y_length=max(c1_prime)-min(c1_prime);
+characteristic_size=max([x_length,y_length]);
+c1_prime=c1_prime./characteristic_size;
+c2_prime=c2_prime./characteristic_size;
+
+% show image with the boundary we found if asked
+if do_plot
+    figure;
+    imshow(I_gray)
+    hold on
+    plot(c2,c1)
+end
