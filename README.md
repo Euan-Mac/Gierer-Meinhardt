@@ -1,11 +1,11 @@
 # Gierer-Meinhardt
 Project desgined to simulate turing patterns formation from Gierer-Meinhardt equations using fenicsx package. 
 
-Right now most of the code to run a simulation is contained in the main.py. However, the code to make the mesh is
-contained in the mesh_generator.py file, which calls the MATLAB script image_procressing.m to find the boundaries of a
-given image. These boundaries are then exported to python which uses the gmsh python API to construct a mesh based on
-the image. This is called at the start of main.py right now for a standard gecko image. The MATLAB script will probably
-need to be edited for different images.
+The code is contained in two clas structures entitled ImageMesh and FiniteElementSolver. The former one is designed to call the  MATLAB function image_procressing.m to find the boundaries of a given image. These boundaries are then exported to python which uses the gmsh python API to construct a mesh based on the image. This is called at the start of main.py right now for a standard gecko image. The MATLAB script will probably need to be edited for different images.
+
+The actual finite elemnt PDE solution is wrappedin the other class (FiniteElementSolver) which does things like define the function space, the weak from, the Newton solver, etc.
+
+How to use both classes is demonstrated in main.py. 
 
 The process is easily parrllelisable (can't spell that) by simply calling mpirun -np 4 main.py.
 
