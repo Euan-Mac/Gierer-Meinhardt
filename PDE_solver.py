@@ -126,14 +126,15 @@ class FiniteElementSolver:
 
     # loads a saved mesh made by gmsh in a way suitable to be run in parallel
     def load_gmsh(self, path_to_mesh):
-        gmsh.initialize()
-        gmsh.open(path_to_mesh)
-        gmsh.model.geo.synchronize()
-        gmsh_model_rank = 0
-        mesh_comm = MPI.COMM_WORLD
-        self.mesh, self.cell_markers, self.facet_markers = gmshio.model_to_mesh(gmsh.model, mesh_comm, gmsh_model_rank,
-                                                                                self.space_dim)
-        gmsh.finalize()
+        self.mesh, self.cell_markers, self.facet_markers = gmshio.read_from_msh(path_to_mesh, MPI.COMM_WORLD, 0, gdim=3)
+        # gmsh.initialize()
+        # gmsh.open(path_to_mesh)
+        # gmsh.model.geo.synchronize()
+        # gmsh_model_rank = 0
+        # mesh_comm = MPI.COMM_WORLD
+        # self.mesh, self.cell_markers, self.facet_markers = gmshio.model_to_mesh(gmsh.model, mesh_comm, gmsh_model_rank,
+        #                                                                         self.space_dim)
+        # gmsh.finalize()
 
 
 # a derived class for specifically nonlinear, time dependent PDEs with two coupled fields.
@@ -258,12 +259,13 @@ class GiererMeinhardt(
         if self.funcs is None:  # check everything else has been set-up properly
             raise RuntimeWarning("Need to define function space before you create the weak form!")
         # all constants from the Gierer-Meinhardt model
-        r = Constant(self.mesh, PETSc.ScalarType(self.r))
-        mu = Constant(self.mesh, PETSc.ScalarType(self.mu))
-        nu = Constant(self.mesh, PETSc.ScalarType(self.nu))
-        Dv = Constant(self.mesh, PETSc.ScalarType(self.Dv))
-        Du = Constant(self.mesh, PETSc.ScalarType(self.Du))
-        delt = Constant(self.mesh, PETSc.ScalarType(self.dt))
+
+        r=self.make_constant(self.r)
+        mu=self.make_constant(self.mu)
+        nu=self.make_constant(self.mu)
+        Dv=self.make_constant(self.Dv)
+        Du=self.make_constant(self.Du)
+        delt=self.make_constant(self.dt)
 
         #  define weak form of both equations as F0 and F1
         F0 = (((self.a_func - self.a_func_prev) / delt) * self.test_a * dx
@@ -277,3 +279,9 @@ class GiererMeinhardt(
               + Dv * dot(grad(self.b_func), grad(self.test_b)) * dx
               )
         self.residual = F0 + F1  # overall  residual is the sum
+
+    def make_constant(self,param):
+        if type(param)==int or type(param)==float:
+            return Constant(self.mesh, PETSc.ScalarType(param))
+        else:
+            return param

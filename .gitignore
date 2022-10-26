@@ -13,3 +13,5 @@ __pycache__/PDE_solver.cpython-39.pyc
 .idea/misc.xml
 .idea/misc.xml
 *.xml
+./__pycache/*
+.idea*
