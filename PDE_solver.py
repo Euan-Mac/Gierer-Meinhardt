@@ -1,5 +1,9 @@
 from mpi4py import MPI
-import matlab.engine
+try:
+    import matlab.engine
+except ModuleNotFoundError:
+    # Error handling
+    pass
 import numpy as np
 import gmsh
 from os.path import join, basename, splitext
