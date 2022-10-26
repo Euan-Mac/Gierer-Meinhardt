@@ -7,7 +7,7 @@ The actual finite elemnt PDE solution is wrappedin the other class (FiniteElemen
 
 How to use both classes is demonstrated in main.py. 
 
-The process is easily parrllelisable (can't spell that) by simply calling mpirun -np 4 main.py.
+The process is easily parrllelisable (can't spell that) by simply calling mpirun -np 4 python main.py. This should be only run on the numerical solution, not the mesh generation. 
 
 The neccesary environments can be set up in conda. For example
 
